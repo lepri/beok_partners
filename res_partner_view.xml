@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <!-- Parceiro -->
+    <record id="view_beok_partner_form" model="ir.ui.view">
+      <field name="name">beok.partner.form</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form" />
+      <field name="arch" type="xml">
+        <notebook>
+          <page position="inside" string="Sweep">
+            <group colspan="4">
+              <field name="aniversario" />
+              <field name="nome_mae" />
+              <field name="nome_conjuge" />
+              <field name="sexo" />
+              <field name="atividade" />
+              <field name="grau_instrucao" />
+              <field name="area_atuacao" />
+              <field name="como_conheceu" />
+              <field name="revende_outro" />
+              <field name="objetivo" />
+              <field name="possui_cartoes" />
+            </group>
+          </page>
+        </notebook>
+      </field>
+    </record>
+
+  </data>
+</openerp>
